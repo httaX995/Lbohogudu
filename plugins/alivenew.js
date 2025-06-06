@@ -15,20 +15,23 @@ try{
 
 let des = `*👋 Hello ${pushname}*
 
-| 🌟 *Dilshan MD - WhatsApp MultiDevice Bot* 🌟  
+| ┏━━━❖•ೋ°🩵 *DILSHAN-MD BOT* 🩵°ೋ•❖━━━┓  
+🤖 *Multidevice WhatsApp Bot | V2.0.0 (Beta)*  🚀
+┏━━━━━━━━━━━━━━━━━┓  
+┃ 👑 𝙊𝙬𝙣𝙚𝙧 : *Dilshan Ashinsa*  
+┃ 🌐 𝙋𝙡𝙖𝙩𝙛𝙤𝙧𝙢 : *Replit | Node.js*  
+┃ 📟 𝙏𝙮𝙥𝙚 : *Public MultiDevice*  
+┗━━━━━━━━━━━━━━━━━┛  
 
-🛡️ 𝐎𝐅𝐅𝐈𝐂𝐈𝐀𝐋 𝐂𝐇𝐀𝐍𝐍𝐄𝐋
-🔗 https://whatsapp.com/channel/0029Vb5nAex2UPBGW79XCX1T
+📌 *Official Links:*  
+╭───────────────╮  
+│📣 𝙅𝙤𝙞𝙣 𝙊𝙪𝙧 𝘾𝙝𝙖𝙣𝙣𝙚𝙡  
+│🔗 https://whatsapp.com/channel/0029Vb5nAex2UPBGW79XCX1T  
+│👥 𝙅𝙤𝙞𝙣 𝙊𝙪𝙧 𝙂𝙧𝙤𝙪𝙥  
+│🔗 https://chat.whatsapp.com/GOZ6NVJYSvXKWj7m7hmruQ  
+╰───────────────╯    
 
-👥 𝐎𝐅𝐅𝐈𝐂𝐈𝐀𝐋 𝐆𝐑𝐎𝐔𝐏
-🔗 https://chat.whatsapp.com/GOZ6NVJYSvXKWj7m7hmruQ
-
-⚡ *Powered by DILSHAN MD*
-🔧 Version: 2.0.0 Beta  
-🌐 Platform: Replit / MultiDevice  
-👑 Developer: Dilshan Ashinsa
- 
-> 📍©POWERD BY DILSHAN ASHINSA📍
+🔌 *Powered By* — *DILSHAN MD*
 `
 return await conn.sendMessage(from,{image: {url: "https://i.ibb.co/zgCFFCX/SulaMd.jpg"},caption: des},{quoted: mek})
 }catch(e){
