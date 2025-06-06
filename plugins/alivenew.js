@@ -32,7 +32,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
      🫟 𝐉𝚘𝚒𝚗 𝐎𝚞𝚛 𝐆𝚛𝚘𝚞𝚙 🫟
 > https://chat.whatsapp.com/GOZ6NVJYSvXKWj7m7hmruQ
   
-> 𝐏𝙾𝚆𝙴𝚁𝙳 𝐁𝚈 𝐃𝐈Lshan 𝐌𝙳⚡`;
+> 𝐏𝙾𝚆𝙴𝚁𝙳 𝐁𝚈 𝐃𝐈Lshan 𝐌𝙳⚡
 
         // Send the status message with an image
         await conn.sendMessage(from, { 
