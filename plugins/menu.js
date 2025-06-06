@@ -14,39 +14,175 @@ cmd({
   reply: _0x4cf25d
 }) => {
   try {
-    const _0x3a9262 = `╭━━━〔 *🩵𝐃𝐈𝐋𝐒𝐇𝐀𝐍 𝐌𝐃 𝐁𝐎𝐓🩵* 〕━━━┈⊷  
-┃○╭──────────────  
-┃○│ 🤖 *Bot Name* : ᴅɪʟꜱʜᴀɴ ᴍᴅ  
-┃○│ 👑 *Owner* : ᴅɪʟꜱʜᴀɴ ᴀꜱʜɪɴꜱᴀ  
-┃○│ 🏷️ *Version* : 2.0.0 ʙᴇᴛᴀ  
-┃○│ 📟 *Platform* : ʀᴇᴘʟɪᴛ | ᴍᴜʟᴛɪ-ᴅᴇᴠɪᴄᴇ  
-┃○│ 🌐 *Mode* : ᴘᴜʙʟɪᴄ  
-┃○│ 💠 *Prefix* : [.]
-┃○╰──────────────  
-╰━━━━━━━━━━━━━━━┈⊷  
-  
-╭━━〔│▂ *OFFICIAL LINKS* ▂│〕━━┈⊷  
-┃🔗│ 📣 Channel :  
-┃🔗│ https://whatsapp.com/channel/0029Vb5nAex2UPBGW79XCX1T  
-┃🔗│ 👥 Group :  
-┃🔗│ https://chat.whatsapp.com/GOZ6NVJYSvXKWj7m7hmruQ  
-╰───────────────────────┈⊷  
-  
-╭━━〔│▂ *MENU LIST* ▂│〕━━┈⊷  
-┃⚙️│1️⃣  📥 *Download Menu*  
-┃⚙️│2️⃣  👥 *Group Menu*  
-┃⚙️│3️⃣  😄 *Fun Menu*  
-┃⚙️│4️⃣  👑 *Owner Menu*  
-┃⚙️│5️⃣  🤖 *AI Menu*  
-┃⚙️│6️⃣  🎎 *Anime Menu*  
-┃⚙️│7️⃣  🔄 *Convert Menu*  
-┃⚙️│8️⃣  📌 *Other Menu*  
-┃⚙️│9️⃣  💞 *Reactions Menu*  
-┃⚙️│🔟  🏠 *Main Menu*  
-╰──────────────────────┈⊷  
-  
-> ⚡Powered By DILSHAN MD ⚡
-    `;
+    const _0x3a9262 = `╭━━━〔 *👑 DILSHAN MD BOT MENU* 〕━━━┈⊷  
+┃  
+┃ *👋 Welcome to DILSHAN MD!*  
+┃ *📱 Contact: wa.me/94772194789*  
+┃ *🔗 Channel: https://whatsapp.com/channel/0029Vb5nAex2UPBGW79XCX1T
+┃  
+┃ *👨‍💻 Owner:* DILSHAN MD  
+┃ *🧾 Baileys:* Multi Device  
+┃ *📌 Type:* NodeJs  
+┃ *🔖 Platform:* Replit  
+┃ *🔰 Mode:* Public  
+┃ *☣️ Prefix:* [.]  
+┃ *🛡️ Version:* 3.0.0 Beta  
+╰━━━━━━━━━━━━━━━━━━━━━━━━━━━┈⊷
+
+╭━━〔 *📥 Download Menu* 〕━━┈⊷  
+┃ • facebook  
+┃ • mediafire  
+┃ • tiktok  
+┃ • twitter  
+┃ • insta  
+┃ • apk  
+┃ • img  
+┃ • play  
+┃ • play2  
+┃ • audio  
+┃ • video  
+┃ • video2  
+┃ • ytmp3  
+┃ • ytmp4  
+┃ • song  
+┃ • darama  
+┃ • gdrive  
+┃ • smovie  
+┃ • baiscope  
+┃ • ginisilia  
+╰━━━━━━━━━━━━━━━━━━━━━━━━━━━┈⊷
+
+╭━━〔 *👥 Group Menu* 〕━━┈⊷  
+┃ • grouplink  
+┃ • add  
+┃ • remove  
+┃ • kick  
+┃ • promote  
+┃ • demote  
+┃ • dismiss  
+┃ • revoke  
+┃ • setgoodbye  
+┃ • setwelcome  
+┃ • delete  
+┃ • getpic  
+┃ • ginfo  
+┃ • disappear on  
+┃ • disappear off  
+┃ • disappear 7D,24H  
+┃ • allreq  
+┃ • updategname  
+┃ • updategdesc  
+┃ • joinrequests  
+┃ • senddm  
+┃ • nikal  
+┃ • mute  
+┃ • unmute  
+┃ • lockgc  
+┃ • unlockgc  
+┃ • invite  
+┃ • tag  
+┃ • hidetag  
+┃ • tagall  
+┃ • tagadmins
+╰━━━━━━━━━━━━━━━━━━━━━━━━━━━┈⊷
+
+╭━━〔 *👑 Owner Menu* 〕━━┈⊷  
+┃ • owner  
+┃ • menu  
+┃ • menu2  
+┃ • listcmd  
+┃ • allmenu  
+┃ • repo  
+┃ • block  
+┃ • unblock  
+┃ • fullpp  
+┃ • setpp  
+┃ • restart  
+┃ • shutdown  
+┃ • updatecmd  
+┃ • alive  
+┃ • ping  
+┃ • gjid  
+┃ • jid  
+╰━━━━━━━━━━━━━━━━━━━━━━━━━━━┈⊷
+
+╭━━〔 *🎉 Fun Menu* 〕━━┈⊷  
+┃ • insult  
+┃ • hack  
+┃ • joke  
+┃ • heart  
+┃ • happy  
+┃ • sad  
+┃ • angry  
+┃ • shy  
+┃ • kiss  
+┃ • moon  
+┃ • confused  
+┃ • hand  
+┃ • nikal  
+╰━━━━━━━━━━━━━━━━━━━━━━━━━━━┈⊷
+
+╭━━〔 *🔄 Convert Menu* 〕━━┈⊷  
+┃ • sticker  
+┃ • sticker2  
+┃ • fancy  
+┃ • take  
+┃ • tomp3  
+┃ • tts  
+┃ • trt  
+╰━━━━━━━━━━━━━━━━━━━━━━━━━━━┈⊷
+
+╭━━〔 *🤖 AI Menu* 〕━━┈⊷  
+┃ • ai  
+┃ • gpt  
+┃ • meta  
+┃ • blackbox  
+┃ • gpt4  
+┃ • bing  
+┃ • copilot  
+╰━━━━━━━━━━━━━━━━━━━━━━━━━━━┈⊷
+
+╭━━〔 *⚙️ Main Menu* 〕━━┈⊷  
+┃ • ping  
+┃ • ping2  
+┃ • alive  
+┃ • runtime  
+┃ • uptime  
+┃ • repo  
+┃ • owner  
+┃ • menu  
+┃ • menu2  
+┃ • restart  
+╰━━━━━━━━━━━━━━━━━━━━━━━━━━━┈⊷
+
+╭━━〔 *🎌 Anime Menu* 〕━━┈⊷  
+┃ • dog  
+┃ • king  
+┃ • animegirl  
+┃ • animegirl1  
+┃ • animegirl2  
+┃ • animegirl3  
+┃ • animegirl4  
+┃ • animegirl5  
+╰━━━━━━━━━━━━━━━━━━━━━━━━━━━┈⊷
+
+╭━━〔 *📚 Other Menu* 〕━━┈⊷  
+┃ • fact  
+┃ • define  
+┃ • news  
+┃ • movie  
+┃ • weather  
+┃ • srepo  
+┃ • insult  
+┃ • save
+┃ • wikipedia  
+┃ • gpass  
+┃ • githubstalk  
+┃ • yts  
+┃ • ytv  
+╰━━━━━━━━━━━━━━━━━━━━━━━━━━━┈⊷
+
+> © Powered by *DILSHAN MD`;
     const _0x18e40d = {
       'mentionedJid': [_0x5253a9.sender],
       'forwardingScore': 0x3e7,
