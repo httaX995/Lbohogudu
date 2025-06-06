@@ -1,57 +1,71 @@
-const { cmd, commands } = require('../command');
-const os = require("os");
-const { runtime } = require('../lib/functions');
+const { malvin } = require("../malvin");
+const config = require("../settings");
+const moment = require("moment");
 
-cmd({
+const ALIVE_IMG = "https://files.catbox.moe/7hqhsw.jpg";
+let botStartTime = Date.now();
+
+malvin({
     pattern: "alive",
-    alias: ["status", "runtime", "uptime"],
-    desc: "Check uptime and system status",
+    desc: "Check if the bot is active.",
     category: "main",
-    react: "👋",
+    react: "💡",
     filename: __filename
-},
-async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
+}, async (conn, mek, m, { reply, from }) => {
     try {
-        // Generate system status message
-        const status = `┏━❮ 🩵𝐃𝐈𝐋𝐒𝐇𝐀𝐍 𝐌𝐃🩵 ❯━
-┃◈┃🤖 ʙᴏᴛ ɴᴀᴍᴇ :ᴅɪʟꜱʜᴀɴ ᴍᴅ
-┃◈┃🔖 ᴠᴇʀsɪᴏɴ : 2.0.0 ʙᴇᴛᴀ
-┃◈┃📟 ᴘʟᴀᴛғᴏʀᴍ : ʀᴇᴘʟɪᴛ
-┃◈┃👨‍💻ᴏᴡɴᴇʀ: ᴅɪʟꜱʜᴀɴ ᴀꜱʜɪɴꜱᴀ
+        const pushname = m.pushName || "User";
+        const currentTime = moment().format("HH:mm:ss");
+        const currentDate = moment().format("dddd, MMMM Do YYYY");
 
-┃◈┃📆 ʀᴜɴᴛɪᴍᴇ : ${runtime(process.uptime())} 
-┃◈┃📈ʀᴀᴍ ᴜsᴀɢᴇ: ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
-┃◈┗━━━━━━━━━━━━━━𖣔𖣔
-╰──────────────┈⊷
+        const ms = Date.now() - botStartTime;
+        const runtime = [
+            Math.floor(ms / (1000 * 60 * 60)),
+            Math.floor((ms / (1000 * 60)) % 60),
+            Math.floor((ms / 1000) % 60),
+        ].map((v) => v.toString().padStart(2, '0')).join(":");
 
-*𝐃𝐢𝐥𝐬𝐡𝐚𝐧 𝐌𝐃 Multidevice Whatsapp Bot*
+        const toTinyCap = (text) =>
+            text.split("").map(c => {
+                const map = { a:'ᴀ', b:'ʙ', c:'ᴄ', d:'ᴅ', e:'ᴇ', f:'ғ', g:'ɢ',
+                    h:'ʜ', i:'ɪ', j:'ᴊ', k:'ᴋ', l:'ʟ', m:'ᴍ', n:'ɴ',
+                    o:'ᴏ', p:'ᴘ', q:'ǫ', r:'ʀ', s:'s', t:'ᴛ', u:'ᴜ',
+                    v:'ᴠ', w:'ᴡ', x:'x', y:'ʏ', z:'ᴢ' };
+                return map[c.toLowerCase()] || c;
+            }).join("");
 
-     🫟 𝐉𝚘𝚒𝚗 𝐎𝚞𝚛 𝐂𝚑𝚊𝚗𝚗𝚎𝚕 🫟
-> https://whatsapp.com/channel/0029Vb5nAex2UPBGW79XCX1T
+        const msg = `
+╭─❍ *${toTinyCap("malvin xd status")}* ❍─╮
+│  
+│  🧑🏻‍💻 ʜɪ: *${pushname}*
+│  🕒 ᴛɪᴍᴇ: *${currentTime}*
+│  📅 ᴅᴀᴛᴇ: *${currentDate}*
+│  ⏳ ᴜᴘᴛɪᴍᴇ: *${runtime}*
+│
+│  ⚙ ᴍᴏᴅᴇ: *${config.MODE}*
+│  ✨ ᴠᴇʀsɪᴏɴ: *${config.version}*
+╰───────────────❍
 
-     🫟 𝐉𝚘𝚒𝚗 𝐎𝚞𝚛 𝐆𝚛𝚘𝚞𝚙 🫟
-> https://chat.whatsapp.com/GOZ6NVJYSvXKWj7m7hmruQ
-  
-> 𝐏𝙾𝚆𝙴𝚁𝙳 𝐁𝚈 𝐃𝐈Lshan 𝐌𝙳⚡
+✅ *Malvin is online and operational!*
+🔧 *System running smoothly!*
+        `.trim();
 
-        // Send the status message with an image
-        await conn.sendMessage(from, { 
-            image: { url: `https://files.catbox.moe/uod3xi.jpg` },  // Image URL
-            caption: status,
+        await conn.sendMessage(from, {
+            image: { url: ALIVE_IMG },
+            caption: msg,
             contextInfo: {
                 mentionedJid: [m.sender],
-                forwardingScore: 1,
+                forwardingScore: 999,
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                    newsletterJid: '120363419308807922@newsletter',
-                    newsletterName: 'DILSHAN MD',
+                    newsletterJid: '120363398430045533@newsletter',
+                    newsletterName: '𝐌𝐀𝐋𝐕𝐈𝐍 𝐀𝐋𝐈𝐕𝐄',
                     serverMessageId: 143
                 }
             }
         }, { quoted: mek });
 
-    } catch (e) {
-        console.error("Error in alive command:", e);
-        reply(`An error occurred: ${e.message}`);
+    } catch (error) {
+        console.error("Error in alive command:", error);
+        return reply(`❌ Error in alive command:\n${error.message}`);
     }
 });
