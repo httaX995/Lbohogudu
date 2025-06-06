@@ -33,7 +33,7 @@ let dec = `╭━━━〔 ⚙️ DILSHAN MD - REPOSITORY INFO ⚙️ 〕━━�
 ┃ 🔥 DILSHAN MD 🔥
 ╰━━━━━━━━━━━━━━━━━━━━━━━╯
 `
-await conn.sendMessage(from,{image:{url: `https://i.ibb.co/Kx3sxSfr/dinuzzmd.jpg`},caption:dec},{quoted:mek});
+await conn.sendMessage(from,{image:{url: `https://files.catbox.moe/zqu8s7.jpg`},caption:dec},{quoted:mek});
 
 }catch(e){
 console.log(e)
