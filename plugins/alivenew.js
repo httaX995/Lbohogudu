@@ -1,71 +1,38 @@
-const { malvin } = require("../malvin");
-const config = require("../settings");
-const moment = require("moment");
+//========= alive command ===========
 
-const ALIVE_IMG = "https://files.catbox.moe/7hqhsw.jpg";
-let botStartTime = Date.now();
+const config = require('../config')
+const {cmd , commands} = require('../command')
 
-malvin({
+cmd({
     pattern: "alive",
-    desc: "Check if the bot is active.",
+    desc: "Check bot online or no.",
     category: "main",
-    react: "💡",
+    react: "👋",
     filename: __filename
-}, async (conn, mek, m, { reply, from }) => {
-    try {
-        const pushname = m.pushName || "User";
-        const currentTime = moment().format("HH:mm:ss");
-        const currentDate = moment().format("dddd, MMMM Do YYYY");
+},
+async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
+try{
 
-        const ms = Date.now() - botStartTime;
-        const runtime = [
-            Math.floor(ms / (1000 * 60 * 60)),
-            Math.floor((ms / (1000 * 60)) % 60),
-            Math.floor((ms / 1000) % 60),
-        ].map((v) => v.toString().padStart(2, '0')).join(":");
+let des = `*👋 Hello ${pushname}*
 
-        const toTinyCap = (text) =>
-            text.split("").map(c => {
-                const map = { a:'ᴀ', b:'ʙ', c:'ᴄ', d:'ᴅ', e:'ᴇ', f:'ғ', g:'ɢ',
-                    h:'ʜ', i:'ɪ', j:'ᴊ', k:'ᴋ', l:'ʟ', m:'ᴍ', n:'ɴ',
-                    o:'ᴏ', p:'ᴘ', q:'ǫ', r:'ʀ', s:'s', t:'ᴛ', u:'ᴜ',
-                    v:'ᴠ', w:'ᴡ', x:'x', y:'ʏ', z:'ᴢ' };
-                return map[c.toLowerCase()] || c;
-            }).join("");
+| 🌟 *Dilshan MD - WhatsApp MultiDevice Bot* 🌟  
 
-        const msg = `
-╭─❍ *${toTinyCap("malvin xd status")}* ❍─╮
-│  
-│  🧑🏻‍💻 ʜɪ: *${pushname}*
-│  🕒 ᴛɪᴍᴇ: *${currentTime}*
-│  📅 ᴅᴀᴛᴇ: *${currentDate}*
-│  ⏳ ᴜᴘᴛɪᴍᴇ: *${runtime}*
-│
-│  ⚙ ᴍᴏᴅᴇ: *${config.MODE}*
-│  ✨ ᴠᴇʀsɪᴏɴ: *${config.version}*
-╰───────────────❍
+🛡️ 𝐎𝐅𝐅𝐈𝐂𝐈𝐀𝐋 𝐂𝐇𝐀𝐍𝐍𝐄𝐋
+🔗 https://whatsapp.com/channel/0029Vb5nAex2UPBGW79XCX1T
 
-✅ *Malvin is online and operational!*
-🔧 *System running smoothly!*
-        `.trim();
+👥 𝐎𝐅𝐅𝐈𝐂𝐈𝐀𝐋 𝐆𝐑𝐎𝐔𝐏
+🔗 https://chat.whatsapp.com/GOZ6NVJYSvXKWj7m7hmruQ
 
-        await conn.sendMessage(from, {
-            image: { url: ALIVE_IMG },
-            caption: msg,
-            contextInfo: {
-                mentionedJid: [m.sender],
-                forwardingScore: 999,
-                isForwarded: true,
-                forwardedNewsletterMessageInfo: {
-                    newsletterJid: '120363398430045533@newsletter',
-                    newsletterName: '𝐌𝐀𝐋𝐕𝐈𝐍 𝐀𝐋𝐈𝐕𝐄',
-                    serverMessageId: 143
-                }
-            }
-        }, { quoted: mek });
-
-    } catch (error) {
-        console.error("Error in alive command:", error);
-        return reply(`❌ Error in alive command:\n${error.message}`);
-    }
-});
+⚡ *Powered by DILSHAN MD*
+🔧 Version: 2.0.0 Beta  
+🌐 Platform: Replit / MultiDevice  
+👑 Developer: Dilshan Ashinsa
+ 
+> 📍©POWERD BY DILSHAN ASHINSA📍
+`
+return await conn.sendMessage(from,{image: {url: "https://i.ibb.co/zgCFFCX/SulaMd.jpg"},caption: des},{quoted: mek})
+}catch(e){
+console.log(e)
+reply(`${e}`)
+}
+})
