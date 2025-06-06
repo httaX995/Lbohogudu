@@ -36,7 +36,7 @@ cmd({
 *Message:* _${customMessage}_
 
 
-> ©Powerd By DILSHAN MD☀
+> 🚀©P𝐎𝐖𝐄𝐑𝐃 B𝐘 𝐃𝐈𝐋𝐒𝐇𝐀𝐍 𝐌𝐃
 `;
 
       try {
