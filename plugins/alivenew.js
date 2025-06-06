@@ -33,7 +33,7 @@ let des = `*👋 Hello ${pushname}*
 
 🔌 *Powered By* — *DILSHAN MD*
 `
-return await conn.sendMessage(from,{image: {url: "https://i.ibb.co/zgCFFCX/SulaMd.jpg"},caption: des},{quoted: mek})
+return await conn.sendMessage(from,{image: {url: "https://files.catbox.moe/uod3xi.jpg"},caption: des},{quoted: mek})
 }catch(e){
 console.log(e)
 reply(`${e}`)
