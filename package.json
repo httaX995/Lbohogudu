@@ -31,9 +31,11 @@
     "api-dylux":"1.8.5",
     "@dark-yasiya/yt-dl.js": "1.0.5",
     "@dark-yasiya/yt-dl.js": "latest"
+    "g-i-s":"latest",
+    "node-cache":"latest"
     
     
     
     
-  }
+ }
 }
