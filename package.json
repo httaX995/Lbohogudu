@@ -9,7 +9,7 @@
     "restart": "pm2 restart dilshan-md"
   },
   "dependencies": {
-   "@whiskeysockets/baileys": "npm:asitha-baliyes-new",
+   "@whiskeysockets/baileys": "github:MR-LAKIYA/Baileys",
     "@adiwajshing/keyed-db": "latest",
     "jimp": "0.16.1",
     "pino": "^7.0.5",
