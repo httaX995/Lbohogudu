@@ -9,9 +9,9 @@
     "restart": "pm2 restart dilshan-md"
   },
   "dependencies": {
-   "@whiskeysockets/baileys": "github:MR-LAKIYA/Baileys",
-"jimp": "0.16.1",
-    "@adiwajshing/keyed-db": "^0.2.4",
+   "@whiskeysockets/baileys": "npm:asitha-baliyes-new",
+    "@adiwajshing/keyed-db": "latest",
+    "jimp": "0.16.1",
     "pino": "^7.0.5",
     "pm2": "^5.2.0",
     "util": "^0.12.4",
